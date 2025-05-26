@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Rock, Paper, Scissors Game</title>
+      <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>(Poké) Rock Paper Scissors</h1>
+    <details id="game-rules">
+      <summary>Game Rules</summary>
+        <p>Fire beats grass. Grass beats water. Water beats fire.</p>
+        <p>A tie will award no points.</p>
+        <p>First player to 3 points wins.</p>
+      </ol>
+    </details>
+    <button id="start-button" class="button">Start Game</button>
+    <div id="game-container">
+      <div id="options-container">
+        <img id="rock-icon" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png">
+        <img id="paper-icon" src="https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/cf47f9fac4ed3037ff2a8ea83204e32aff8fb5f3.png">
+        <img id="scissors-icon" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full//007.png">
+      </div>
+      <div id="start-or-choose-container">
+        <p id="instruction-message">Choose a pokemon for battle!</p>
+        <button id="start-battle" class="button">Start Battle</button>
+      </div>
+      <div id="final-winner"></div>
+      <div id="score-container">
+        <p>Ash: <span id="player-score">0</span></p>
+        <p id="winner-message"><span id="winner-result"></span></p>
+        <p>Rival: <span id="computer-score">0</span></p>
+      </div>
+      <div id="selection-container">
+        <div class="trainer"><img src ="https://upload.wikimedia.org/wikipedia/en/e/e4/Ash_Ketchum_Journeys.png" /></div>
+        <div class="selection" id="player-placeholder-box"><img id="player-selection" src="https://i.pinimg.com/736x/3c/0d/e3/3c0de384b20a985809b9f9ade61e89fe.jpg"/></div>
+        <div class="vs-container" id="vs-container">VS</div>
+        <div class="selection" id="computer-placeholder-box"><img id="computer-selection" src="https://archives.bulbagarden.net/media/upload/thumb/8/84/WTP_EP001_before.png/400px-WTP_EP001_before.png"/></div>
+        <div class="trainer"><img src ="https://archives.bulbagarden.net/media/upload/thumb/7/75/Gary_Oak_JN.png/175px-Gary_Oak_JN.png" /></div>
+    </div>
+    
+    <button id="reset-button" class="button">Play Again?</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- Rock Paper Scissors
+Rock: https://visualpharm.com/assets/770/Forward%20Punch-595b40b75ba036ed117d5faa.svg
+
+Paper: https://visualpharm.com/assets/433/Whole%20Hand-595b40b85ba036ed117dd471.svg
+
+Scissors: https://visualpharm.com/assets/541/Hand%20Scissors-595b40b75ba036ed117d61ac.svg
+-->

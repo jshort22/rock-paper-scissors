@@ -1,0 +1,168 @@
+html{
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d0def5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*background-image: url("https://i.pinimg.com/736x/cd/f2/a5/cdf2a5aa0a40469d23873928f128336f.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+details {
+  margin: 20px 0px 40px 0px;
+  font-size: 1.5rem;
+  display: block;
+}
+
+summary {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#start-button {
+  display: block;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+  border: 3px solid black;
+  margin: 5px;
+}
+
+#game-container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#final-winner {
+  display: none;
+  font-size: 3rem;
+}
+
+#score-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 2rem;
+  margin: 0px;
+}
+
+#start-or-choose-container {
+  height: 3rem;
+  margin: 10px;
+}
+
+#instruction-message {
+  display: flex;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+#start-battle {
+  display: none;
+}
+
+#options-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin: 10px 0px;
+}
+
+#options-container img {
+  display: flex;
+  height: 100px;
+  width: 100px;
+}
+
+#options-container img:hover {
+  transform: translateY(-10px) scale(1.5,1.5)
+}
+
+#selection-container {
+  display: flex;
+  gap: 50px;
+}
+
+.selection {
+  border: 1px solid black;
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.selection img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+#vs-container {
+  font-size: 5rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.trainer {
+  height: 150px;
+  width: 100px;
+  border: 0px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trainer img {
+  min-height: 100%;
+  min-width: 100%;
+  overflow: show;
+}
+
+#player-selection {
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+}
+
+#computer-selection {
+  object-fit: stretch;
+}
+
+#computer-placeholder-box {
+  padding: 0px;
+}
+
+.card-flip {
+  transform: rotateY(180deg);
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  transform-style: preserve-3d;
+}
+
+#reset-button {
+  display: none;
+  margin-top: 70px;
+}
